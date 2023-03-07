@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import Webcam from "react-webcam";
 
@@ -8,15 +8,15 @@ function DisplayValues({ setDisplay }) {
   let lightIntensity = 22;
   let soilMoisture = 22;
   const webcamRef = useRef(null);
-  const [isRecording, setIsRecording] = useState(false);
+  //   const [isRecording, setIsRecording] = useState(false);
 
-  const startRecording = () => {
-    setIsRecording(true);
-  };
+  //   const startRecording = () => {
+  //     setIsRecording(true);
+  //   };
 
-  const stopRecording = () => {
-    setIsRecording(false);
-  };
+  //   const stopRecording = () => {
+  //     setIsRecording(false);
+  //   };
 
   const videoConstraints = {
     facingMode: "user",
